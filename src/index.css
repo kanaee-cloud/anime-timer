@@ -1,13 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Poppins", sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.input {
+  background: rgba(255, 255, 255, 0.1);
+  /* box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); */
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.navbar {
+  background: rgba(19, 19, 19, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 40px;
+  padding: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.active-label {
+  color: #0C0E1B;
+  background-color: #17e9e1;
+  border-radius: 50px;
+}
+
+button{
+  padding: 5px 7px;
+}
+
+
+
+@layer base {
+  body {
+    @apply text-lg leading-8 text-primary bg-main bg-no-repeat bg-cover bg-center;
+  }
 }
